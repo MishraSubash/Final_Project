@@ -19,7 +19,7 @@
   
 ## Timeline 
  ### Week 1: 
-  * Getting Started: General discussion about the project overview
+  * Getting Started: General discussion about the project
   * SWAT Analysis 
   * Fetching and cleaning data
   * Developing coding Framework 
