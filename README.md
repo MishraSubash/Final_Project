@@ -3,7 +3,7 @@
 # **Algorithmic Trading With Blockchain**
 ## Motivation & Objective: 
 
-### Crypto Analyst believes there is tremendious opportunity to beat crypto market because of low regulation, public information and significantly low active investors. So, we decided to come up with real time auto-trading platfom in pythom to grab the upside potential to make money in cryptotrading. Rather than paying expensive terminal fees like Bloomberg, Coinrule, etc. We want to create our own superfast automated platform. 
+### Crypto Analyst believes there is tremendious opportunity to beat crypto market because of low regulation, public information and significantly low active investors. So, we decided to come up with real time auto-trading platfom in developed python environment to grab the upside potential to make money in cryptotrading. Rather than paying expensive terminal fees like Bloomberg, Coinrule, etc. We want to create our own superfast automated platform. 
 
 ## Team:
   * Subash Mishra
