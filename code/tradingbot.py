@@ -4,7 +4,7 @@ from other_functions import *
 import threading, os, logging
 from datetime import datetime
 import gvars
-from assetHandler import assetuser
+from assetuser import assetuser
 from pytz import timezone
 
 # world object we log to; the user will work with log descriptions
@@ -61,7 +61,7 @@ def clean_open_orders(api):
     for order in orders:
       api.cancel_order(order.id)
 
-def check_account_ok(api):
+def review_account_ok(api):
 
     account = api.get_account()
     if account.account_blocked or account.trading_blocked or account.transfers_blocked:
@@ -111,10 +111,10 @@ def main():
     # initialize the asset user
     assuser = assetuser()
 
-    # get the Alpaca account ready
+    # get the Alpaca account 
     try:
         _L.info("Getting account")
-        check_account_ok(api) # check if it is ok to trade
+        review_account_ok(api) # review if it is ok to trade
         account = api.get_account()
         clean_open_orders(api) # clean all the open orders
         _L.info("Got it")
