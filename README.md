@@ -9,20 +9,27 @@
   * Moses Devanesan 
 
 ## Motivation & Objective: 
-Trading Analyst believes there is tremendious opportunity to beat equity market because of low regulation, public information and significantly low active investors. So, we decided to come up with real time auto-trading platfom in developed python environment to grab the upside potential to make money in cryptotrading. Rather than paying expensive terminal fees like Bloomberg, Coinrule, etc. We want to create our own superfast automated platform. 
-### **Advantages of our platfrom**
-  * Automated prompt decission making ability
-  * Transperancy
-  * Efficiency: Use of real-time data
-  * Cost Saving 
- 
+We want a system that is systematic, emotionless, and works 24/7.
+
+Unlike humans, trading bots can consistently execute strategies that are precise. Trading bots can execute orders within milliseconds of an event occurring. Humans don’t have the reflexes or capacity to effectively implement such a strategy without some sort of trading bot. 
+
+More generally than simply what is possible, traders want something that is reliable and deterministic. That way there is no opportunity for error. When the strategy is set, the strategy will be executed based on the parameters of the algorithm. That’s really all there is to it. 
+
+
 ## Overview: How it works?
+## Setup
+Before we can begin, we must set up our environment. This will involve a few steps to get access to trading APIs and our exchange accounts, but once set up, we won’t need to make any changes to our development environment.  
+ 
+ ### Generate & Store API Keys: 
+Before we can start using the Alpace Trade APIs, we will need to generate our API keys. This can be done by logging into your [Alpaca Developer](https://app.alpaca.markets/brokerage/new-account/greeting) account and sign up for paper trading then grap necessary API keys. 
 
+### Setting Up Our Python Environment: 
+There are a few things we will need to set up for our Python environment before we can start coding. First, start by installing some libarries that includes beautifulsoup4, SciPy, requests. 
 
-## Data Management: 
-### 
+### Store Pricing Data
+ For this project we ahve created separate CSV file to store all tickes (you can customize as you like) and in the coding, we interlinked CSV file with code. so this bot is hassle free if investor wants to change tickers. 
   
-  
+## The Coding Parameters 
 ## Indicators: The Theory of the basic Indicators
 We are using three indicators to evaluate the performance of our trading. All three indicators are embeded with code so that it would automatically guides "Trading Bot" as directed in the code about when to buy and sell stocks. By default, we will make a use of 30-minute candles to see the general trend of the asset and 5-minute candles for deciding entry and exiting points.
   * **Exponential Moving Average (EMA)** : An [exponential moving average](https://www.investopedia.com/terms/e/ema.asp) (EMA) is a type of moving average (MA) that places a greater weight and significance on the most recent data points.
@@ -62,33 +69,41 @@ The following graph clearly precede a price change trend.
 ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Stochastic%20sample%20image.png)
 
 ## Entry Strategy 
-### Preparing to enter into Trade: Why this strategy? 
+Before entering into the trade, it analysie the general trends for 30 mins time frame using EMA . 
+
+Our decision making will go through a total of 4 steps. We may also call them filters , gates ,
+enablers or authorizers , since these are the ones that will confirm a possible entry . The
+order goes this way:
 
  ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Entry%20Strategy.png)
  
- 
- 
+  
  ## Trading Strategy
- ### Buying and Selling: How bot places entry/exit order? 
+ After entering into the market, it will remain there until investors directed to do otherwise. 
  ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Trading%20Strategy.png)
  
  
  ## Exit Strategy
- ### Analysing factors: Why we want to get out from that trade? 
+ This may be the most important step to fefine when to get out from the market, This bot is directed to get out under two circumstances: 
+ * Gain Check: 
+      * The Take Profit: It will be the upper limit where the position will be closed. If the share reaches that price, then you have taken the maximum amount you wanted to take.
+      * The Stop Loss: It will be the lower limit. This is the most important measure against your losses and in favour of your gains. More on that later.
+      
+  * The Stochastic Curves: The stochastic oscillator are also in place, in this strategy, to close a position. The value will be constantly fluctuating, and this oscillator will tell us that it may have reached its highest/lowest point. If the oscillator crosses itself in the other direction, the system will read that signal and it will close the position.
+  
+  Graphical representation of Exit Position
  ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Exit%20Strategy.png)
  
- ### Factors to keep in Mind
-  * Getting Started: General discussion about the project
-  * SWAT Analysis 
-  * Fetching and cleaning data
-  * Developing coding Framework 
+## Conclusion
+Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. So, We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
+
+## postmortem
+* Quality prior to quantity: This guide does not describe a high frequency trading system. Going through the 4 filters described above will sometimes lead to an open position, but some days not a single order will be placed.
+
+* Stop loss may be unrealistic: Not capping on stop loss could be more benificial in highly volatile situation. Investor must allow the price to fluctuate before entering the positive gain zone.
+
+* In the future we would like to extend our platform in more sophesticated ways in a sense that it will have more paraments to evaluate, making it flexible, and deploy it in virtual environment. 
   
-  
- ## Conclusion 
- 
- ## postmortem
-  
-  
- 
+Don’t hesitate to reach out to our team if you have any questions about how to build a trading bot, need help constructing a new trading strategy, or want us to integrate new features
 
   
