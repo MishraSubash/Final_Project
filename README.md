@@ -104,6 +104,7 @@ Equity Trading is a hugh and complex market. As we expand into the foreseeable f
 
 * In the future we would like to extend our platform in more sophesticated ways in a sense that it will have more paraments to evaluate, making it flexible, and deploy it in virtual environment. 
   
-Don’t hesitate to reach out to our team if you have any questions about how to build a trading bot, need help constructing a new trading strategy, or want us to integrate new features
+## Any Questions: 
+Don’t hesitate to reach out to our team if you have any questions about how to build a trading bot, need help constructing a new trading strategy, or want us to integrate new features. 
 
   
