@@ -95,7 +95,7 @@ order goes this way:
  ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Exit%20Strategy.png)
  
 ## Conclusion
-Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. So, We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
+Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
 
 ## Postmortem
 * Quality prior to quantity: This guide does not describe a high frequency trading system. Going through the 4 filters described above will sometimes lead to an open position, but some days not a single order will be placed.
