@@ -97,7 +97,7 @@ order goes this way:
 ## Conclusion
 Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. So, We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
 
-## postmortem
+## Postmortem
 * Quality prior to quantity: This guide does not describe a high frequency trading system. Going through the 4 filters described above will sometimes lead to an open position, but some days not a single order will be placed.
 
 * Stop loss may be unrealistic: Not capping on stop loss could be more benificial in highly volatile situation. Investor must allow the price to fluctuate before entering the positive gain zone.
