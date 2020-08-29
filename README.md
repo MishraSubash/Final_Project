@@ -1,5 +1,3 @@
-# Final_Project
-
 # **Equity-Trading with Bot**
 ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/python%20trading%20bot.jpg)
 
