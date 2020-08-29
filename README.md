@@ -41,7 +41,7 @@ As an example, the figure below illustrates a trend going up, where the blue lin
  
  * **Relative Strength Index (RSI)** :The [Relative Strength Index](https://www.investopedia.com/terms/r/rsi.asp) consists of an oscillator that charts the directional price movements. When the price of a stock has an increasing trend, it has a high RSI. The more accentuated and constant the positive changes, the higher the RSI value. And vice versa.
 
-      #### Why RSI: We are using RSI to answer the question of ***"HOW HARD IS PEOPLE BUYING -OR SELLING THIS VALUE?"***
+Why RSI: We are using RSI to answer the question of ***"HOW HARD IS PEOPLE BUYING -OR SELLING THIS VALUE?"***
 
 This indicator are used to see buying and selling momentum, where: 
   * We set the value range from 0 to 100. (Which is normally a default value)
@@ -55,7 +55,7 @@ The graphs belows clearly shows where RSI hits the ceiling and bottom and reboun
 
   * **Stochastic Analysis**: The [Stochastic](https://www.investopedia.com/terms/s/stochastic-modeling.asp) is also an oscillator indicating the momentum of the current price in relation to its price range over a period of time. It intends to predict price turning points, working with the close, high and low price, believing the price tends to close near the extremes of the recent candles.
 
-      #### Why Stochastic: We are using RSI to answer the question of ***"HOW IS THE ASSET PRICE CURRENTLY, COMPARED TO ITS RECENT HISTORICAL RANGE?"****
+Why Stochastic: We are using RSI to answer the question of ***"HOW IS THE ASSET PRICE CURRENTLY, COMPARED TO ITS RECENT HISTORICAL RANGE?"****
 
 This indicator will be used to check how much room for carrying on with the current trend does the value have.
   * It is composed of two curves . The fast one, which will react quicker to the price, and the slow one.
