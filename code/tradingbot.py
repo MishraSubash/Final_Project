@@ -4,52 +4,52 @@ from other_functions import *
 import threading, os, logging
 from datetime import datetime
 import gvars
-from assetuser import assetuser
+from assetself import assetself
 from pytz import timezone
 
 # world object we log to; the user will work with log descriptions
 _L = logging.getLogger("demo")
 
-# make a unique logger that logs to per-thread-name files
-class multiuser(logging.user):
-    def __init__(user, dirname):
-        super(multiuser, user).__init__()
-        user.files = {}
-        user.dirname = dirname
+# make a unique logger that logs to per-thread-name 
+class multiself(logging.self):
+    def __init__(self, dirname):
+        super(multiself, self).__init__()
+        self.files = {}
+        self.dirname = dirname
         if not os.access(dirname, os.W_OK):
             raise Exception("Directory %s not writeable" % dirname)
 
-    def flush(user):
-        user.acquire()
+    def flush(self):
+        self.acquire()
         try:
-            for fp in list(user.files.values()):
+            for fp in list(self.files.values()):
                 fp.flush()
         finally:
-            user.release()
+            self.release()
 
-    def _get_or_open(user, key):
+    def _get_or_open(self, key):
         # Get the file pointer for the given key, or else open the file
-        user.acquire()
+        self.acquire()
         try:
-            if key in user.files:
-                return user.files[key]
+            if key in self.files:
+                return self.files[key]
             else:
-                fp = open(os.path.join(user.dirname, "%s.log" % key), "a")
-                user.files[key] = fp
+                fp = open(os.path.join(self.dirname, "%s.log" % key), "a")
+                self.files[key] = fp
                 return fp
         finally:
-            user.release()
+            self.release()
 
-    def emit(user, record):
-        # No lock here; following code for streamuser and fileuser
+    def emit(self, record):
+        # No lock here; following code for streamself and fileself
         try:
-            fp = user._get_or_open(record.threadName)
-            msg = user.format(record)
+            fp = self._get_or_open(record.threadName)
+            msg = self.format(record)
             fp.write('%s\n' % msg)
         except (KeyboardInterrupt, SystemExit):
             raise
         except:
-            user.handleError(record)
+            self.handleError(record)
 
 def clean_open_orders(api):
     # First, cancel any existing orders so they don't impact our buying power.
@@ -90,15 +90,15 @@ def main():
 
     # Set up a basic std erro logging; this is nothing fancy.
     log_format = '%(asctime)s %(threadName)12s: %(lineno)-4d %(message)s'
-    stderror_ = logging.streamuser()
-    stderror_user.setFormatter(logging.Formatter(log_format))
-    logging.getLogger().adduser(stderror_user)
+    stderror_ = logging.streamself()
+    stderror_self.setFormatter(logging.Formatter(log_format))
+    logging.getLogger().addself(stderror_self)
 
     # Set up a logger that creates one file per thread
     todayLogsPath = create_log_folder(gvars.LOGS_PATH)
-    multi_user = multiuser(todayLogsPath)
-    multi_user.setformatter(logging.formatter(log_format))
-    logging.getlogger().adduser(multi_user)
+    multi_self = multiself(todayLogsPath)
+    multi_self.setformatter(logging.formatter(log_format))
+    logging.getlogger().addself(multi_self)
 
     # Set default log level, log a message
     _L.setLevel(logging.DEBUG)
@@ -108,8 +108,8 @@ def main():
     # initialize the API with Alpaca
     api = tradeapi.REST(gvars.API_KEY, gvars.API_SECRET_KEY, gvars.ALPACA_API_URL, api_version='v2')
 
-    # initialize the asset user
-    assuser = assetuser()
+    # initialize the asset self
+    assself = assetself()
 
     # get the Alpaca account 
     try:
@@ -124,7 +124,7 @@ def main():
     for thread in range(gvars.MAX_WORKERS): # this will launch the threads
         maxwork = 'th' + str(thread) # establishing each worker name
 
-        maxwork = threading.Thread(name=worker,target=run_tbot,args=(_L,assuser,account))
+        maxwork = threading.Thread(name=worker,target=run_tbot,args=(_L,assself,account))
         maxwork.start() # it runs a run_tbot function, defined here
 
         time.sleep(1)
