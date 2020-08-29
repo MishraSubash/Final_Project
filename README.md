@@ -19,20 +19,29 @@
   * Efficiency: Use of real-time data
   * Cost Saving 
   
-## Timeline 
- ### Week 1: 
+## Entry Strategy 
+ ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Entry%20Strategy.png)
+ 
+ 
+ 
+ ## Trading Strategy
+ ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Trading%20Strategy.png)
+ 
+ 
+ ## Exit Strategy
+ ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Exit%20Strategy.png)
+ 
+ ### Factors to keep in Mind
   * Getting Started: General discussion about the project
   * SWAT Analysis 
   * Fetching and cleaning data
   * Developing coding Framework 
   
- ### Week 2: 
-  * Finishing up readMe file 
-  * Concluding core coding 
-  * Working on Powerpoint for Presentation 
   
- ### BIG DAY 
-  * Presentation 
+ ## Conclusion 
+ 
+ ## postmortem
+  
   
  
 
