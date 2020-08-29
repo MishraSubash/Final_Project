@@ -29,7 +29,8 @@
 ## Indicators: The Theory of the basic Indicators
 ### We are using three indicators to evaluate the performance of our trading. All three indicators are embeded with code so that it would automatically guides "Trading Bot" as directed in the code about when to buy and sell stocks. By default, we will make a use of 30-minute candles to see the general trend of the asset and 5-minute candles for deciding entry and exiting points.
   * **Exponential Moving Average (EMA)** : An [exponential moving average](https://www.investopedia.com/terms/e/ema.asp) (EMA) is a type of moving average (MA) that places a greater weight and significance on the most recent data points.
-      #### Why EMA: We are using EMA to answer the question of ***"IS THE TREND CLEARLY DEFINED? IF YES, WILL IT GO UP OR DOWN?"***
+  
+Why EMA: We are using EMA to answer the question of ***"IS THE TREND CLEARLY DEFINED? IF YES, WILL IT GO UP OR DOWN?"***
 
 To generate trends, we will be working with three different windows sizes: 9 for fast, 26 for the medium and 50 for the slow .      Obviously, the 50-value EMA will reveal a much longer-term trend than the 9-value EMA. Our code automatically evaluate the trens by itslelf and able to oder bot on the bais of: 
   * If the fast EMA is over the medium, and the medium is over the slow, the trend goes up.
