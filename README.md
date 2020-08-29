@@ -10,6 +10,7 @@
   * Samir Sidi
   * Kevin Lacap
   * Matt Newman
+  * Moses Devanesan 
   
 ## Advantages of our platfrom
   * Automated prompt decission making ability
