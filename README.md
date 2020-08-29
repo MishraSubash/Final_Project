@@ -2,16 +2,19 @@
 
 # **Equity-Trading with Bot**
 ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/python%20trading%20bot.jpg)
-## Motivation & Objective: 
 
-### Trading Analyst believes there is tremendious opportunity to beat equity market because of low regulation, public information and significantly low active investors. So, we decided to come up with real time auto-trading platfom in developed python environment to grab the upside potential to make money in cryptotrading. Rather than paying expensive terminal fees like Bloomberg, Coinrule, etc. We want to create our own superfast automated platform. 
-
-## Team:
+## Team Members: 
   * Subash Mishra
   * Samir Sidi
   * Kevin Lacap
   * Matt Newman
   * Moses Devanesan 
+  
+## Motivation & Objective: 
+
+### Trading Analyst believes there is tremendious opportunity to beat equity market because of low regulation, public information and significantly low active investors. So, we decided to come up with real time auto-trading platfom in developed python environment to grab the upside potential to make money in cryptotrading. Rather than paying expensive terminal fees like Bloomberg, Coinrule, etc. We want to create our own superfast automated platform. 
+
+
   
 ## Advantages of our platfrom
   * Automated prompt decission making ability
