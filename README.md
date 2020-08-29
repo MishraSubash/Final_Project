@@ -36,7 +36,7 @@ We are using three indicators to evaluate the performance of our trading. All th
   
 Why EMA: We are using EMA to answer the question of ***"IS THE TREND CLEARLY DEFINED? IF YES, WILL IT GO UP OR DOWN?"***
 
-To generate trends, we will be working with three different windows sizes: 9 for fast, 26 for the medium and 50 for the slow .      Obviously, the 50-value EMA will reveal a much longer-term trend than the 9-value EMA. Our code automatically evaluate the trens by itslelf and able to oder bot on the bais of: 
+To generate trends, we will be working with three different windows sizes: 9 for fast, 26 for the medium and 50 for the slow .      Obviously, the 50-value EMA will reveal a much longer-term trend than the 9-value EMA. Our code automatically evaluates the trend by itself and is able to place trades based on the following criteria: 
   * If the fast EMA is over the medium, and the medium is over the slow, the trend goes up.
   * If the fast EMA is below the medium, and the medium is below the slow, the trend goes down.
  
@@ -45,14 +45,14 @@ As an example, the figure below illustrates a trend going up, where the blue lin
  
  * **Relative Strength Index (RSI)** :The [Relative Strength Index](https://www.investopedia.com/terms/r/rsi.asp) consists of an oscillator that charts the directional price movements. When the price of a stock has an increasing trend, it has a high RSI. The more accentuated and constant the positive changes, the higher the RSI value. And vice versa.
 
-Why RSI: We are using RSI to answer the question of ***"HOW HARD IS PEOPLE BUYING -OR SELLING THIS VALUE?"***
+Why RSI: We are using RSI to answer the question of ***"HOW overbought or oversold is this security?"***
 
-This indicator are used to see buying and selling momentum, where: 
+This indicator is used to see buying and selling momentum, where: 
   * We set the value range from 0 to 100. (Which is normally a default value)
   * The mean value 50 means- a neutral position - Investors are neither buying nor selling
-  * The value 70 and 30 is defined as turning point meaning surpassing these barriers means that rebound is likely happen.It also means if RSI is 70- the stock is over brought and if RSI is 10- it has been oversold. 
+  * The value 70 and 30 is defined as a turning point, surpassing these barriers means that rebound is likely to happen.It also means if RSI is >70 the stock is over brought and if RSI is <30 it has been oversold. 
   
-The graphs belows clearly shows where RSI hits the ceiling and bottom and rebounds back.
+The graphs below clearly shows where RSI hits the ceiling and bottom and rebounds back.
 
 ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/RSI%20Sample.gif)
 
