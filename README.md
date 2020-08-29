@@ -27,7 +27,7 @@ Before we can start using the Alpace Trade APIs, we will need to generate our AP
 There are a few things we will need to set up for our Python environment before we can start coding. First, start by installing some libarries that includes beautifulsoup4, SciPy, requests. 
 
 ### Store Pricing Data
- For this project we ahve created separate CSV file to store all tickes (you can customize as you like) and in the coding, we interlinked CSV file with code. so this bot is hassle free if investor wants to change tickers. 
+ For this project we have created separate CSV file to store all tickers (you can customize as you like) and in the coding, we interlinked CSV file with code so that bot will act accordingly.
   
 ## The Coding Parameters 
 ## Indicators: The Theory of the basic Indicators
@@ -84,7 +84,7 @@ order goes this way:
  
  
  ## Exit Strategy
- This may be the most important step to fefine when to get out from the market, This bot is directed to get out under two circumstances: 
+ This may be the most important step to define when to get out from the market, This bot is directed to get out under two circumstances: 
  * Gain Check: 
       * The Take Profit: It will be the upper limit where the position will be closed. If the share reaches that price, then you have taken the maximum amount you wanted to take.
       * The Stop Loss: It will be the lower limit. This is the most important measure against your losses and in favour of your gains. More on that later.
