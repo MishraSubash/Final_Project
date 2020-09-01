@@ -21,7 +21,7 @@ class assetself:
         except Exception as e:
             print("Does Not Load Asset!")
             print(e)
-            block_thread()
+            blockthread()
 
         self.tradeableassets = self.rawassets
 
