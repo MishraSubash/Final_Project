@@ -90,9 +90,12 @@ order goes this way:
       * The Stop Loss: It will be the lower limit. This is the most important measure against your losses and in favour of your gains. More on that later.
       
   * The Stochastic Curves: The stochastic oscillator are also in place, in this strategy, to close a position. The value will be constantly fluctuating, and this oscillator will tell us that it may have reached its highest/lowest point. If the oscillator crosses itself in the other direction, the system will read that signal and it will close the position.
+
+Graphical representation of Exit Position
   
-  Graphical representation of Exit Position
- ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Exit%20Strategy.png)
+
+
+![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Exit%20Strategy.png)
  
 ## Conclusion
 Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
