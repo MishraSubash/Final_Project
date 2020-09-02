@@ -96,9 +96,11 @@ order goes this way:
  
 ## Conclusion
 Equity Trading is a hugh and complex market. As we expand into the foreseeable future, we will need to continue developing trading resources that help us better automate our portfolio and trading strategy. We have utilized what we have gained in this course to develop our own vitual trading bot to automate and senseless trading platform. Our team think this is new ways of trading in digital age. Mo more Quotron, no more clicking, no more monitoring stocks all day, no calculation of figures and numbers for pnl - we directed machine to do all and everything in one place. 
-![Performance Chart when Terminal is Open](https://github.com/MishraSubash/Trading_Bot/blob/master/Images/With_Open_Terminal.jpeg)
 
-![Performance Chart with closed Terminal](https://github.com/MishraSubash/Trading_Bot/blob/master/Images/Without_Terminal.jpeg)
+
+![Performance Chart](https://github.com/MishraSubash/Trading_Bot/blob/master/Images/With_Open_Terminal.jpeg)
+
+![Performance Chart1](https://github.com/MishraSubash/Trading_Bot/blob/master/Images/Without_Terminal.jpeg)
 
 
 ## Postmortem
