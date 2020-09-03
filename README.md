@@ -1,4 +1,4 @@
-# **Equity-Trading with Bot**
+# **Equity Trading with Python-Bot**
 ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/python%20trading%20bot.jpg)
 
 ## Team Members: 
