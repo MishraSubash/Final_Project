@@ -82,12 +82,11 @@ order goes this way:
  After entering into the market, it will remain there until investors directed to do otherwise. 
  ![](https://github.com/MishraSubash/Final_Project/blob/master/Images/Trading%20Strategy.png)
  
- ## How platform work? 
- 
- 
+ ## How does our platform work? 
  [**Video Demonstration**](https://www.youtube.com/watch?v=oq5d7bybnf0)
  
  
+  
  
  ## Exit Strategy
  This may be the most important step to define when to get out from the market, This bot is directed to get out under two circumstances: 
